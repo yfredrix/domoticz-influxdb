@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "domoticz-influxdb"
+version = "0.1.0"
+description = "An package for domoticz history towards influxdb"
+authors = ["Yorick Fredrix <yorick.fredrix@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+influxdb-client = {extras = ["async"], version = "^1.41.0"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
